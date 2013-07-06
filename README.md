@@ -17,7 +17,7 @@ older ones never fix their bugs.
        All done.  It should work immediately.
 #.  To use this:
        Type "date" and hit tab.  Also try the words `isoD`, `now`, `datetime`, `utcnow`, `utcdatetime`,
-       `date` and `time` followed by tab.  You may have to hit tab twice if you have another symbol in
-       your current namespace.
+       `date` and `time` followed by tab.  You may have to hit tab twice if you have another matching symbol 
+       in your current namespace.
 
 
