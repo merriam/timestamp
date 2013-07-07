@@ -3,19 +3,19 @@
 from datetime import datetime
 import sublime_plugin
 
-# Adding too much documentation:
-#  1.  The original Gist had %M instead of %m in the strftime() class.  %M means minute,
-#   while %m means month as a decimal.  
-#  2.  To install this:
-#       Sublime's menu Tools -> New Plugin..., 
-#       Paste this gist over the sample given (use the raw button to see the gist as text)
-#       Save the file in your Sublime Packages directory.   File -> Save As.. should suggest
-#       an appropriate spot.  I recommend the name timestamp.py
-#       All done.  It should work immediately.
-#  3.  To use this:
-#       Type "date" and hit tab.  Also try the words `isoD`, `now`, `datetime`, `utcnow`, `utcdatetime`,
-#       `date` and `time` followed by tab.  You may have to hit tab twice if you have another symbol in
-#       your current namespace.
+#  Sublime Text 2 plug-in to insert TimeStamps into your file. Type 
+# 'now' and then hit tab for a quick timestamp.
+#
+#  This is a plugin and repository made from my gist so that it can 
+# handle Pull Requests and be registered with Sublime Package Control. 
+# The original code was written by Rob Crowie and then fixed by reima.
+#
+#  To use this:
+#   Type "date" and hit tab.  Also try the words `isoD`, `now`, `datetime`, 
+#   `utcnow`, `utcdatetime`, `date` and `time` followed by tab.  You may have 
+#    to hit tab twice if you have another matching symbol in your current namespace.
+#
+#  See https://github.com/merriam/timestamp for more informaiton.
 
 class TimestampCommand(sublime_plugin.EventListener):
     """Expand `isoD`, `now`, `datetime`, `utcnow`, `utcdatetime`,
